@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "Beautiful, lightning-fast Wordpress themes with WP Rig - Make your theme meet the latests web standards ✨"
+date:   2019-12-20 15:31:21 +0000
+categories: wordpress javascript webdev beginners rig
+---
+
+Hey 👀✨
+
+Ahem... any Wordpress developer around these lands willing to get some knowledge on one of the lastest features this CMS has received?
+
+So, today I was feeling like speaking about one specific topic that it's been around in Wordpress last year. It's a feature I've been using at work for the past year and a half before joining the RoR team, and it's something I kind of fell in love with (In terms of Wordpress development). So, allow me to introduce what **WP Rig** is, and why you should be implementing this in your projects. I promise this will be a short one.
+
+![Let's gooo](https://media.giphy.com/media/3ohhwyXhrNXmL831XG/giphy.gif)
+
+##So, what's WP Rig?##
+
+If you are familiar with Wordpress development, you'll know that *normally* we tend to start a new website by creating a new theme from scratch. This requires quite a lot of effort normally, many things to do here (Performance, SEO, Design, Functionality, Plugins...) It'd sure be a relief to have some of these things already done, or at least, to have a more system to work with. This is where WP Rig helps us.
+
+It is an open source project originally created by Morten Rand-Hendriksen with the support of LinkedIn Learning. It is an starter theme that includes many interesting functionalities, you may recognize some of them in the images below:
+
+![WP rig tools](https://thepracticaldev.s3.amazonaws.com/i/iau4nz4rsd3iwjgorzvd.png)
+
+
+As their website states, **WP Rig is**:
+
+A **modern WordPress starter theme and build process** bundled into one convenient package. It helps you create beautiful, lightning-fast WordPress themes with exciting user experiences that meet the latest web standards.
+
+You write modern PHP, CSS, and JavaScript, WP Rig lints, optimizes, and minifies your code to make the theme–and the site it runs on–as performant as possible.
+
+Sounds cool, I know, but, what does *exactly* Rig offers you?
+
+- Minimal and beautiful templates
+- Code and file structure optimized for modern performance standards
+- Lazy loading images
+- Well documented helper functions to make development easy going
+- Gulp, who will serve you with **BrowserSync**, no need to F5 anymore, Babel, PostCSS, ESLint and WP Coding Standards
+- Integrated with VS Code linters
+- Progressive web app, responsive, and AMP ready
+
+![WP Rig power](https://media.giphy.com/media/cdNSp4L5vCU7aQrYnV/giphy.gif)
+<figcaption>You'll feel somehow like this when you use it</figcaption>
+
+And... we need to know how difficult is it to include this into your project, right? You may think it is quite laborious to add all these javascript cool services into your website.
+
+Well...
+
+It's basically a 1-2-3, you just git clone the theme, a small config file to give your new theme a name and an author, VS code extension to add the linter...
+
+```npm install```
+
+And ta-da, your theme is now ready to be developed, you'll get a *dev* folder where you'll work, and every change you make here, will be compiled into your theme folder.
+
+![Ta-da](https://media.giphy.com/media/8w3ksZxYqGvjAkoWPF/giphy.gif)
+<figcaption>Aw man it feels so gooood.</figcaption>
+
+Now you just have to run the next command and, that's it, BrowserSync will be running, and all your files will be watched over. Then, you'll see what it is the first sketch of your awesome website.
+
+```npm run build```
+
+And that's it, I'm not going any further (yet).
+
+I just want you to know that, if you are interested in this free starter theme, you can find its website **at the bottom**, as well as the **github repository / wiki**, and a **complete free course** on how to develop with this awesome starter theme.
+
+![Your turn now](https://media.giphy.com/media/9G52AvjN8I72qZUEcu/giphy.gif)
+
+I hope you liked it, and if so, don't forget to leave a comment saying what do you think about WP Rig. Also, you can follow, or just talk to me about this or any other of my posts through my [Twitter](https://twitter.com/brownio_).
+
+
+- [WP Rig site](https://wprig.io/)
+- [WP Rig course](https://wprig.io/course/wprig_en/)
+- [WP Rig github repository](https://github.com/wprig/wprig)
+- [WP Rig wiki](https://github.com/wprig/wprig/wiki)
+- [WP Rig creator - Morten] (https://twitter.com/mor10)

@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Antonio Djigo - Dev who writes about travelling
+title: Antonio Djigo
 email: antonio.djinav@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A many-things Developer from the Canary Islands, looking forward to be one of those "cool" nomad devs someday.
@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brownio_
 instagram_username: brownio_
-github_username:  djigolab
+github_username:  djigoio
 linkedin_username: antonio-djigo-598797138
 
 # Build settings
