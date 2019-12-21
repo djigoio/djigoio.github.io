@@ -71,4 +71,4 @@ I hope you liked it, and if so, don't forget to leave a comment saying what do y
 - [WP Rig course](https://wprig.io/course/wprig_en/)
 - [WP Rig github repository](https://github.com/wprig/wprig)
 - [WP Rig wiki](https://github.com/wprig/wprig/wiki)
-- [WP Rig creator - Morten] (https://twitter.com/mor10)
+- [WP Rig creator - Morten](https://twitter.com/mor10)
