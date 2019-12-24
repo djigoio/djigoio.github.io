@@ -19,12 +19,17 @@ body{
 }
 
 .skill{
-    opacity: ;
+    width: 100%;
+    max-width: 150px;
+    list-style: none;
 }
+
 .antonio img{
     margin: 0 auto;
+    width: 100%;
+    max-width: 150px;
 }
-ul,li,h1,h2,h3,h4,h5,p{      
+ul,li,h1,h2,h3,h4,h5,p{
      margin: 0;
 }
 
@@ -45,6 +50,12 @@ ul,li,h1,h2,h3,h4,h5,p{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
+        justify-items: center;
+    }
+
+    .skill svg{
+        width: 100%;
+        height: auto;
     }
 
 }
@@ -59,9 +70,9 @@ ul,li,h1,h2,h3,h4,h5,p{
     .homepage{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;    
+        grid-gap: 30px;
     }
-    
+
     .homepage .info{
         grid-column: 1;
         grid-row: 1;
@@ -76,7 +87,7 @@ ul,li,h1,h2,h3,h4,h5,p{
     .homepage .antonio{
         grid-column: 2;
     }
-    
+
     .homepage .button-wrapper{
         display: flex;
         flex-flow: column;
