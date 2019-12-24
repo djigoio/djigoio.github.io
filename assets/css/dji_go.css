@@ -3,7 +3,7 @@ body{
 }
 
 .homepage{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .antonio{
@@ -24,11 +24,14 @@ body{
     list-style: none;
 }
 
+
 .antonio img{
     margin: 0 auto;
     width: 100%;
     max-width: 150px;
+    height: auto;
 }
+
 ul,li,h1,h2,h3,h4,h5,p{
      margin: 0;
 }
@@ -54,6 +57,7 @@ ul,li,h1,h2,h3,h4,h5,p{
     }
 
     .skill svg{
+        display: block;
         width: 100%;
         height: auto;
     }
