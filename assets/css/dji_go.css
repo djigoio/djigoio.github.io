@@ -2,8 +2,13 @@ body{
     font-family: 'Overpass', sans-serif;
 }
 
+ul,li,h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+
 .homepage{
     min-height: 100vh;
+    padding: 30px 15px;
 }
 
 .antonio{
@@ -17,13 +22,29 @@ body{
     flex-flow: column;
     justify-content: space-evenly;
 }
+.info>p{
+    margin-bottom: 30px;
+}
+.skills{
+    overflow: hidden;
+}
 
 .skill{
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
     list-style: none;
+    position: relative;
 }
 
+.skill-o-meter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.javascript{
+}
 
 .antonio img{
     margin: 0 auto;
@@ -32,8 +53,17 @@ body{
     height: auto;
 }
 
-ul,li,h1,h2,h3,h4,h5,p{
-     margin: 0;
+.homepage .button-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+}
+
+.homepage .button-wrapper>p{
+    margin-bottom: 10px;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -52,8 +82,9 @@ ul,li,h1,h2,h3,h4,h5,p{
     .homepage .info .skills{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
+        grid-gap: 55px;
         justify-items: center;
+        margin-bottom: 30px;
     }
 
     .skill svg{
@@ -92,11 +123,4 @@ ul,li,h1,h2,h3,h4,h5,p{
         grid-column: 2;
     }
 
-    .homepage .button-wrapper{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        grid-column: 1/-1;
-    }
 }
