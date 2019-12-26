@@ -1,4 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+ul,li,h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+
+.homepage{
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.antonio{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.info>p{
+    margin-bottom: 30px;
+}
+.skills{
+    overflow: hidden;
+}
+
+.skill{
+    width: 100%;
+    max-width: 120px;
+    list-style: none;
+    position: relative;
+}
+
+.skill-o-meter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.javascript{
+}
+
+.antonio img{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.homepage .button-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+}
+
+.homepage .button-wrapper>p{
+    margin-bottom: 10px;
+
+}
+
 @media screen and (max-width: 800px) {
+    .homepage{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+
+    .social-media-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    .homepage .info .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 55px;
+        justify-items: center;
+        margin-bottom: 30px;
+    }
+
+    .skill svg{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width: 800px) {
@@ -7,9 +105,26 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
-    .social-media-list{
+
+    .homepage{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
+        grid-gap: 30px;
     }
+
+    .homepage .info{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .homepage .info .skills{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .homepage .antonio{
+        grid-column: 2;
+    }
+
 }
