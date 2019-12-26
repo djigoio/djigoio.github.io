@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body{
+    position: relative;
     font-family: 'Overpass', sans-serif;
 }
 
@@ -10,11 +11,36 @@ ul,li,h1,h2,h3,h4,h5,p{
     margin: 0;
 }
 
-.homepage{
+.homepage,.form-wrapper{
     min-height: 100vh;
     padding: 30px 15px;
 }
 
+.form-wrapper{
+    position: absolute;
+    background: white;
+    opacity: 0;
+    z-index: 64;
+    overflow: auto;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: showForm .8s ease-in-out forwards;
+}
+
+.form-wrapper button{
+    width: 100%;
+}
+.form-wrapper form{
+    margin: 0 auto;
+
+}
+
+.main,.footer{
+    z-index: 13;
+}
 .antonio{
     display: grid;
     justify-content: center;
@@ -30,7 +56,7 @@ ul,li,h1,h2,h3,h4,h5,p{
     margin-bottom: 30px;
 }
 .skills{
-    overflow: hidden;
+overflow: hidden;
 }
 
 .skill{
@@ -47,7 +73,18 @@ ul,li,h1,h2,h3,h4,h5,p{
     mix-blend-mode: multiply;
 }
 
-.javascript{
+.svg-icon{
+    padding: 0;
+}
+
+.contact-me{
+    height: 60px;
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    display: flex
+    slideUp .8s ease-in-out forwards;
+    background: white;
 }
 
 .antonio img{
@@ -112,19 +149,23 @@ ul,li,h1,h2,h3,h4,h5,p{
         grid-gap: 30px;
     }
 
-    .homepage .info{
-        grid-column: 1;
-        grid-row: 1;
-    }
+}
 
-    .homepage .info .skills{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
+@keyframes slideUp {
+    from {
+        top: -60px
     }
-
-    .homepage .antonio{
-        grid-column: 2;
+    to {
+        top: 0;
     }
+}
 
+@keyframes showForm {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0vh);
+        opacity: 1;    }
 }
