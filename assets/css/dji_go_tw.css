@@ -11438,6 +11438,14 @@ ul,li,h1,h2,h3,h4,h5,p{
   margin: 0 auto;
 }
 
+.form-wrapper textarea{
+  height: 150px;
+}
+
+.form-wrapper {
+  display: none;
+}
+
 .main,.footer{
   z-index: 13;
 }
