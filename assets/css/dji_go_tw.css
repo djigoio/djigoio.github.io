@@ -11410,14 +11410,16 @@ ul,li,h1,h2,h3,h4,h5,p{
   margin: 0;
 }
 
-.homepage,.form-wrapper{
+.homepage{
   min-height: 100vh;
   padding: 30px 15px;
 }
 
-.form-wrapper{
+#form-wrapper{
   position: absolute;
   background: white;
+  padding: 30px 15px;
+  flex-flow: column;
   opacity: 0;
   z-index: 64;
   overflow: auto;
@@ -11430,19 +11432,24 @@ ul,li,h1,h2,h3,h4,h5,p{
           animation: showForm .8s ease-in-out forwards;
 }
 
-.form-wrapper button{
+#form-wrapper button{
   width: 100%;
 }
 
-.form-wrapper form{
+#form-wrapper form{
   margin: 0 auto;
+  height: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
-.form-wrapper textarea{
+#form-wrapper textarea{
   height: 150px;
 }
 
-.form-wrapper {
+#form-wrapper {
+  align-items: center;
+
   display: none;
 }
 
@@ -11495,13 +11502,15 @@ ul,li,h1,h2,h3,h4,h5,p{
 }
 
 .contact-me{
-  height: 60px;
   position: fixed;
   top: -60px;
   width: 100%;
-  display: flex
-    slideUp .8s ease-in-out forwards;
-  background: white;
+  display: flex;
+  animation: slideUp .8s ease-in-out forwards;
+  background-color:rgba(255,255,255,0.8);}
+
+.contact-me button{
+  width: 100%;
 }
 
 .antonio img{
